@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Kalkulator</title>
+    </h:head>
+    <h:body>
+        <h2>Kalkulator</h2>
+        <h:form>
+            <h:outputLabel for="nilai1" value="Nilai 1:"/>
+            <h:inputText id="nilai1" value="#{kalkulator.nilai1}"/>
+            <br/>
+            <h:outputLabel for="nilai2" value="Nilai 2:"/>
+            <h:inputText id="nilai2" value="#{kalkulator.nilai2}"/>
+            <br/>
+            <h:commandButton value="Tambah" action="#{kalkulator.tambah()}"/>
+            <h:commandButton value="Kurang" action="#{kalkulator.kurang()}"/>
+            <h:commandButton value="Kali" action="#{kalkulator.kali()}"/>
+            <h:commandButton value="Bagi" action="#{kalkulator.bagi()}"/>
+            <br/>
+            <h:outputLabel for="hasil" value="Hasil:"/>
+            <h:outputText id="hasil" value="#{kalkulator.hasil}"/>
+        </h:form>
+    </h:body>
+</html>
+
